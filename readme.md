@@ -35,11 +35,37 @@ Al finalizar, la tienda permitirá:
 
 --------- Semana 3 — iteradores, símbolos y buenas prácticas de ES6  --------- 
 
---------- Semana 4 -  --------- 
+¿Qué es un iterador?
+Un iterador es un mecanismo que permite recorrer una colección de datos y obtener sus elementos uno por uno. En JavaScript, los arreglos tienen un iterador incorporado.
 
---------- Semana 5 -  --------- 
---------- Semana 6 -  --------- 
---------- Semana 7 -  --------- 
+Un iterador utiliza el método next(), que devuelve un objeto con dos propiedades importantes:
+- value: el valor del elemento actual
+- done: indica si el recorrido ya terminó
+
+
+
+--------- Semana 4 - closures y funciones avanzadas  --------- 
+
+La idea será incorporar una funcionalidad dinámica al catálogo utilizando closures, es decir, funciones que pueden recordar y conservar variables de su ámbito externo
+
+Propongo agregar un filtro de productos por categoría que permita seleccionar qué productos mostrar, manteniendo el resumen del catálogo coherente con los resultados visibles
+
+--------- Semana 5 - callbacks, promesas y async/await  --------- 
+
+La idea es simular una consulta que tarda en responder, como ocurriría al solicitar los productos a un servidor. Todavía no usaremos fetch ni una API externa
+
+--------- Semana 6 - Fetch y consumo de APIs  --------- 
+
+Esta semana conectaremos la tienda web con una fuente de datos externa para que el catálogo deje de depender únicamente de los productos escritos manualmente en app.js
+
+API USADA DE PRODUCTOS: https://dummyjson.com/docs/products
+
+Archivos modificados: JS - CSS
+
+--------- Semana 7 - Node.js, npm y Express  --------- 
+
+preparar un servidor local que podamos conectar con el catálogo y ampliar en la semana 8 para gestionar productos mediante rutas y operaciones CRUD.
+
 --------- Semana 8 -  --------- 
 --------- Semana 9 -  --------- 
 --------- Semana 10 -  --------- 
