@@ -311,3 +311,8 @@ EN SEMANA 9 EN ADELANTE MHACER EN SERVIDOR EL ARCHIVO .env y que contenga lo sig
 MONGODB_URI=mongodb://127.0.0.1:27017
 MONGODB_DB=tiendaWeb
 PORT=3000
+
+
+Y tambien debe isntalas los node_modules mediante el comando: npm install
+
+y luego correrlo con el comando: npm start
