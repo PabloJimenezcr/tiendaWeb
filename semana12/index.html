@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Web - Semana 12</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Tienda Web</h1>
+        <p>Catalogo conectado con la API</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="resumen">
+            <article class="panel">
+                <h2>Cantidad de productos</h2>
+                <p id="cantidad-productos">0</p>
+            </article>
+
+            <article class="panel">
+                <h2>Valor del catalogo</h2>
+                <p id="valor-catalogo">₡0</p>
+            </article>
+        </section>
+
+        <section class="panel">
+            <h2>Agregar producto</h2>
+
+            <form id="formulario-producto">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" minlength="2" required>
+
+                <label for="precio">Precio en colones</label>
+                <input id="precio" name="precio" type="number" min="0.01" step="0.01" required>
+
+                <label for="categoria">Categoria</label>
+                <input id="categoria" name="categoria" type="text" minlength="2" required>
+
+                <button id="boton-guardar" type="submit">Guardar producto</button>
+            </form>
+
+            <p id="mensaje" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="catalogo">
+            <h2>Catalogo de productos</h2>
+            <button id="boton-recargar" type="button">Actualizar catalogo</button>
+            <div id="lista-productos" class="lista-productos">
+                <p>Cargando productos...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tienda Web - Semana 12</p>
+    </footer>
+</body>
+</html>

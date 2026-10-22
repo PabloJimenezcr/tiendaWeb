@@ -1,0 +1,143 @@
+
+/* semana 1 - estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+/* semana 1 - encabezado de la tienda */
+.encabezado {
+    background-color: #1e293b;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 0 0 10px;
+}
+
+.encabezado p {
+    margin: 0;
+}
+
+/* semana 1 - contenedor principal */
+.contenedor {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* semana 4 - controles de filtrado */
+.filtros {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.filtros h2 {
+    margin-top: 0;
+}
+
+.filtros label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.filtros select {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: white;
+    color: #1f2937;
+    font-size: 16px;
+}
+
+/* semana 1 - distribucion de productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* semana 1 - tarjeta de producto */
+.producto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.producto h3 {
+    margin-top: 0;
+}
+
+/* semana 2 - precios originales y con descuento */
+.precio-original {
+    color: #64748b;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.precio-descuento {
+    color: #047857;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* semana 2 - etiqueta para ofertas */
+.etiqueta-oferta {
+    display: inline-block;
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* semana 1 - categoria del producto */
+.categoria {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* semana 4 - mensaje cuando no hay resultados */
+.mensaje-vacio {
+    padding: 20px;
+    color: #64748b;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* semana 2 y 3 - resumen del catalogo */
+.resumen {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* semana 6 - imagenes de productos externos */
+.imagen-producto {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: white;
+}
+

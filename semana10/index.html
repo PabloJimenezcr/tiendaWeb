@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!-- semana 1 - encabezado de la tienda -->
+    <header class="encabezado">
+        <h1>Tienda Web</h1>
+        <p>Catalogo de productos tecnologicos</p>
+    </header>
+
+    <main class="contenedor">
+        <!-- semana 4 - filtro dinamico de productos -->
+        <section class="filtros">
+            <h2>Filtrar productos</h2>
+
+            <label for="filtro-categoria">Seleccionar categoria</label>
+
+            <select id="filtro-categoria">
+                <option value="todas">Todas las categorias</option>
+            </select>
+        </section>
+
+        <!-- semana 1 a 4 - catalogo de productos -->
+        <section>
+            <h2>Productos disponibles</h2>
+
+            <div id="lista-productos" class="productos"></div>
+
+            <!-- semana 4 - mensaje para resultados vacios -->
+            <p id="mensaje-productos" class="mensaje-vacio" hidden>
+                No hay productos en esta categoria
+            </p>
+        </section>
+
+        <!-- semana 2 y 3 - resumen del catalogo -->
+        <section class="resumen">
+            <h2>Resumen del catalogo</h2>
+            <p id="cantidad-productos"></p>
+            <p id="valor-catalogo"></p>
+        </section>
+    </main>
+</body>
+</html>

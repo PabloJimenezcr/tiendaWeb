@@ -1,0 +1,157 @@
+
+/* semana 12 - estilos de la tienda */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f8;
+    color: #263445;
+}
+
+.encabezado {
+    padding: 30px 20px;
+    background: #243b53;
+    color: white;
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 0 0 8px;
+}
+
+.encabezado p {
+    margin: 0;
+}
+
+.contenedor {
+    width: min(1100px, 92%);
+    margin: 30px auto;
+}
+
+.resumen {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.panel,
+.catalogo {
+    padding: 22px;
+    margin-bottom: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+.panel h2,
+.catalogo h2 {
+    margin-top: 0;
+}
+
+.resumen .panel p {
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#formulario-producto {
+    display: grid;
+    gap: 10px;
+    max-width: 500px;
+}
+
+#formulario-producto input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd2d9;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #1769aa;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #125386;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    padding: 20px;
+    border: 1px solid #e0e5eb;
+    border-radius: 10px;
+    background: white;
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    overflow-wrap: anywhere;
+}
+
+.precio {
+    color: #176b43;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.id-producto {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.boton-eliminar {
+    background: #b42318;
+}
+
+.boton-eliminar:hover {
+    background: #8f1d14;
+}
+
+.error {
+    color: #b42318;
+}
+
+.exito {
+    color: #176b43;
+}
+
+footer {
+    padding: 20px;
+    color: #64748b;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        width: 94%;
+        margin: 18px auto;
+    }
+
+    .panel,
+    .catalogo {
+        padding: 16px;
+    }
+}
