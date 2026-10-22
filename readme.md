@@ -302,3 +302,12 @@ este servidor tendrá las rutas para consultar, agregar, actualizar y eliminar p
 5- se ajusto el app.js, este es el archivo que conecta la página con el servidor mediante fetch. Todo lo que se agrega o elimina se envía a la API; no se modifica únicamente la pantalla
 6- se ajusto el css
 7- corremos el servidor, npm start
+
+
+IMPORTANTE:
+
+EN SEMANA 9 EN ADELANTE MHACER EN SERVIDOR EL ARCHIVO .env y que contenga lo siguiente:
+
+MONGODB_URI=mongodb://127.0.0.1:27017
+MONGODB_DB=tiendaWeb
+PORT=3000
